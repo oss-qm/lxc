@@ -1,3 +1,9 @@
+lxc (1:3.2.1-0) experimental; urgency=medium
+
+  * new upstream version
+
+ -- Enrico Weigelt, metux IT consult <info@metux.net>  Wed, 22 Jan 2020 16:57:03 +0100
+
 lxc (1:3.0.2-1~exp+4) experimental; urgency=medium
 
   * d/rules: strip unnecessary DPKG_EXPORT_BUILDFLAGS and include that are not
