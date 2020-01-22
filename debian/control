@@ -6,7 +6,7 @@ Uploaders: Antonio Terceiro <terceiro@debian.org>,
            Evgeni Golov <evgeni@debian.org>,
            Pierre-Elliott Bécue <peb@debian.org>
 Build-Depends: bash-completion,
-               debhelper (>= 11~),
+               debhelper (>= 10),
                dh-apparmor,
                dh-exec,
                docbook2x,
