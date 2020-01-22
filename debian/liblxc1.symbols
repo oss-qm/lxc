@@ -8,6 +8,7 @@ liblxc.so.1 liblxc1 #MINVER#
  __netlink_recv@Base 3.0.2
  __netlink_send@Base 3.0.2
  __netlink_transaction@Base 3.0.2
+ add_elem_to_mount_list@Base 1:3.1.1-0
  add_required_remount_flags@Base 3.0.2
  addattr@Base 3.0.2
  append_unexp_config_line@Base 3.0.2
@@ -54,30 +55,35 @@ liblxc.so.1 liblxc1 #MINVER#
  dir_detect@Base 3.0.2
  dir_exists@Base 3.0.2
  dir_mount@Base 3.0.2
- dir_new_path@Base 3.0.2
+#MISSING: 1:3.1.1-0# dir_new_path@Base 3.0.2
  dir_umount@Base 3.0.2
  do_append_unexp_config_line@Base 3.0.2
  do_mkfs_exec_wrapper@Base 3.0.2
  do_resolve_add_rule@Base 3.0.2
  fd_cloexec@Base 3.0.2
+ fd_to_fd@Base 1:3.1.1-0
  fhas_fs_type@Base 3.0.2
  file_exists@Base 3.0.2
+ file_to_buf@Base 1:3.1.1-0
  find_fstype_cb@Base 3.0.2
  find_unmapped_nsid@Base 3.0.2
  fnv_64a_buf@Base 3.0.2
  fopen_cloexec@Base 3.0.2
  get_btrfs_subvol_path@Base 3.0.2
  get_cgroup_version@Base 3.0.2
+ get_fssize@Base 1:3.1.1-0
  get_hierarchy@Base 3.0.2
  get_hostarch@Base 3.0.2
  get_mapped_rootid@Base 3.0.2
  get_minimal_idmap@Base 3.0.2
  get_new_ctx@Base 3.0.2
+ get_ns_gid@Base 1:3.1.1-0
  get_ns_uid@Base 3.0.2
  get_rundir@Base 3.0.2
  get_template_path@Base 3.0.2
  get_u16@Base 3.0.2
  has_fs_type@Base 3.0.2
+ id128_to_uuid_string@Base 1:3.1.1-0
  in_caplist@Base 3.0.2
  is_blktype@Base 3.0.2
  is_btrfs_fs@Base 3.0.2
@@ -87,6 +93,7 @@ liblxc.so.1 liblxc1 #MINVER#
  is_dir@Base 3.0.2
  is_fs_type@Base 3.0.2
  is_ovs_bridge@Base 3.0.2
+ is_shared_mountpoint@Base 1:3.1.1-0
  is_valid_storage_type@Base 3.0.2
  linkderef@Base 3.0.2
  list_active_containers@Base 3.0.2
@@ -103,10 +110,12 @@ liblxc.so.1 liblxc1 #MINVER#
  lsm_init@Base 3.0.2
  lsm_name@Base 3.0.2
  lsm_nop_drv_init@Base 3.0.2
+ lsm_process_cleanup@Base 1:3.1.1-0
  lsm_process_label_fd_get@Base 3.0.2
  lsm_process_label_get@Base 3.0.2
  lsm_process_label_set@Base 3.0.2
  lsm_process_label_set_at@Base 3.0.2
+ lsm_process_prepare@Base 1:3.1.1-0
  lsm_selinux_drv_init@Base 3.0.2
  lvm_clonepaths@Base 3.0.2
  lvm_compare_lv_attr@Base 3.0.2
@@ -127,6 +136,7 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_abstract_unix_recv_fds@Base 3.0.2
  lxc_abstract_unix_send_credential@Base 3.0.2
  lxc_abstract_unix_send_fds@Base 3.0.2
+ lxc_abstract_unix_send_fds_iov@Base 1:3.1.1-0
  lxc_add_state_client@Base 3.0.2
  lxc_allocate_ttys@Base 3.0.2
  lxc_ambient_caps_down@Base 3.0.2
@@ -147,6 +157,7 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_char_right_gc@Base 3.0.2
  lxc_check_inherited@Base 3.0.2
  lxc_chroot@Base 3.0.2
+ lxc_clear_apparmor_raw@Base 1:3.1.1-0
  lxc_clear_automounts@Base 3.0.2
  lxc_clear_cgroups@Base 3.0.2
  lxc_clear_config_caps@Base 3.0.2
@@ -158,6 +169,7 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_clear_includes@Base 3.0.2
  lxc_clear_limits@Base 3.0.2
  lxc_clear_mount_entries@Base 3.0.2
+ lxc_clear_namespace@Base 1:3.1.1-0
  lxc_clear_procs@Base 3.0.2
  lxc_clear_sysctls@Base 3.0.2
  lxc_clone@Base 3.0.2
@@ -174,6 +186,7 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_cmd_get_state@Base 3.0.2
  lxc_cmd_init@Base 3.0.2
  lxc_cmd_mainloop_add@Base 3.0.2
+ lxc_cmd_seccomp_notify_add_listener@Base 1:3.1.1-0
  lxc_cmd_serve_state_clients@Base 3.0.2
  lxc_cmd_sock_get_state@Base 3.0.2
  lxc_cmd_sock_rcv_state@Base 3.0.2
@@ -185,7 +198,8 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_config_define_free@Base 3.0.2
  lxc_config_define_load@Base 3.0.2
  lxc_config_item_is_supported@Base 3.0.2
- lxc_config_net_hwaddr@Base 3.0.2
+#MISSING: 1:3.1.1-0# lxc_config_net_hwaddr@Base 3.0.2
+ lxc_config_net_is_hwaddr@Base 1:3.1.1-0
  lxc_config_parse_arch@Base 3.0.2
  lxc_config_read@Base 3.0.2
  lxc_config_value_empty@Base 3.0.2
@@ -195,8 +209,9 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_container_put@Base 3.0.2
  lxc_convert_mac@Base 3.0.2
  lxc_count_file_lines@Base 3.0.2
- lxc_create_network_priv@Base 3.0.2
- lxc_create_network_unpriv@Base 3.0.2
+ lxc_create_network@Base 1:3.1.1-0
+#MISSING: 1:3.1.1-0# lxc_create_network_priv@Base 3.0.2
+#MISSING: 1:3.1.1-0# lxc_create_network_unpriv@Base 3.0.2
  lxc_create_tmp_proc_mount@Base 3.0.2
  lxc_delete_network@Base 3.0.2
  lxc_delete_network_priv@Base 3.0.2
@@ -217,6 +232,7 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_free_handler@Base 3.0.2
  lxc_free_networks@Base 3.0.2
  lxc_freeze@Base 3.0.2
+ lxc_get_conf_bool@Base 1:3.1.1-0
  lxc_get_conf_int@Base 3.0.2
  lxc_get_conf_size_t@Base 3.0.2
  lxc_get_conf_str@Base 3.0.2
@@ -229,17 +245,27 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_getstate@Base 3.0.2
  lxc_global_config_value@Base 3.0.2
  lxc_grow_array@Base 3.0.2
+ lxc_has_api_extension@Base 1:3.1.1-0
+ lxc_id128_randomize@Base 1:3.1.1-0
+ lxc_id128_write@Base 1:3.1.1-0
+ lxc_id128_write_fd@Base 1:3.1.1-0
  lxc_inherit_namespace@Base 3.0.2
  lxc_init@Base 3.0.2
  lxc_init_handler@Base 3.0.2
+ lxc_ip_forwarding_off@Base 1:3.1.1-0
+ lxc_ip_forwarding_on@Base 1:3.1.1-0
  lxc_ipv4_addr_add@Base 3.0.2
  lxc_ipv4_addr_get@Base 3.0.2
- lxc_ipv4_dest_add@Base 3.0.2
+#MISSING: 1:3.1.1-0# lxc_ipv4_dest_add@Base 3.0.2
  lxc_ipv4_gateway_add@Base 3.0.2
  lxc_ipv6_addr_add@Base 3.0.2
  lxc_ipv6_addr_get@Base 3.0.2
- lxc_ipv6_dest_add@Base 3.0.2
+#MISSING: 1:3.1.1-0# lxc_ipv6_dest_add@Base 3.0.2
  lxc_ipv6_gateway_add@Base 3.0.2
+ lxc_ipvlan_flag_to_isolation@Base 1:3.1.1-0
+ lxc_ipvlan_flag_to_mode@Base 1:3.1.1-0
+ lxc_ipvlan_isolation_to_flag@Base 1:3.1.1-0
+ lxc_ipvlan_mode_to_flag@Base 1:3.1.1-0
  lxc_is_line_empty@Base 3.0.2
  lxc_list_config_items@Base 3.0.2
  lxc_list_net@Base 3.0.2
@@ -273,6 +299,7 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_log_category_namespace@Base 3.0.2
  lxc_log_category_nbd@Base 3.0.2
  lxc_log_category_network@Base 3.0.2
+ lxc_log_category_nl@Base 1:3.1.1-0
  lxc_log_category_overlay@Base 3.0.2
  lxc_log_category_parse@Base 3.0.2
  lxc_log_category_rbd@Base 3.0.2
@@ -343,13 +370,16 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_netdev_rename_by_name@Base 3.0.2
  lxc_netdev_set_mtu@Base 3.0.2
  lxc_netdev_up@Base 3.0.2
+ lxc_netns_get_nsid@Base 1:3.1.1-0
  lxc_netns_set_nsid@Base 3.0.2
  lxc_network_add@Base 3.0.2
  lxc_network_move_created_netdev_priv@Base 3.0.2
+ lxc_network_recv_from_parent@Base 1:3.1.1-0
  lxc_network_recv_name_and_ifindex_from_child@Base 3.0.2
- lxc_network_recv_veth_names_from_parent@Base 3.0.2
+#MISSING: 1:3.1.1-0# lxc_network_recv_veth_names_from_parent@Base 3.0.2
  lxc_network_send_name_and_ifindex_to_parent@Base 3.0.2
- lxc_network_send_veth_names_to_child@Base 3.0.2
+ lxc_network_send_to_child@Base 1:3.1.1-0
+#MISSING: 1:3.1.1-0# lxc_network_send_veth_names_to_child@Base 3.0.2
  lxc_newlock@Base 3.0.2
  lxc_nic_exists@Base 3.0.2
  lxc_normalize_path@Base 3.0.2
@@ -364,13 +394,19 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_quiet_specified@Base 3.0.2
  lxc_raw_clone@Base 3.0.2
  lxc_raw_clone_cb@Base 3.0.2
+ lxc_raw_execveat@Base 1:3.1.1-0
+ lxc_raw_pidfd_send_signal@Base 1:3.1.1-0
+ lxc_read_file_expect@Base 1:3.1.1-0
  lxc_read_from_file@Base 3.0.2
  lxc_read_nointr@Base 3.0.2
  lxc_read_nointr_expect@Base 3.0.2
  lxc_read_seccomp_config@Base 3.0.2
+ lxc_recv_nointr@Base 1:3.1.1-0
+ lxc_recvmsg_nointr_iov@Base 1:3.1.1-0
  lxc_remove_nic_by_idx@Base 3.0.2
  lxc_requests_empty_network@Base 3.0.2
  lxc_restore_phys_nics_to_netns@Base 3.0.2
+ lxc_rexec@Base 1:3.1.1-0
  lxc_ringbuf_create@Base 3.0.2
  lxc_ringbuf_move_read_addr@Base 3.0.2
  lxc_ringbuf_read@Base 3.0.2
@@ -385,17 +421,25 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_safe_uint64@Base 3.0.2
  lxc_safe_uint@Base 3.0.2
  lxc_safe_ulong@Base 3.0.2
+ lxc_seccomp_add_notifier@Base 1:3.1.1-0
  lxc_seccomp_free@Base 3.0.2
  lxc_seccomp_load@Base 3.0.2
+ lxc_seccomp_recv_notifier_fd@Base 1:3.1.1-0
+ lxc_seccomp_send_notifier_fd@Base 1:3.1.1-0
+ lxc_seccomp_setup_proxy@Base 1:3.1.1-0
+ lxc_send_nointr@Base 1:3.1.1-0
+ lxc_sendfile_nointr@Base 1:3.1.1-0
  lxc_serve_state_clients@Base 3.0.2
  lxc_set_config_item_locked@Base 3.0.2
  lxc_set_death_signal@Base 3.0.2
  lxc_set_state@Base 3.0.2
  lxc_setgroups@Base 3.0.2
  lxc_setup@Base 3.0.2
+ lxc_setup_keyring@Base 1:3.1.1-0
  lxc_setup_network_in_child_namespaces@Base 3.0.2
  lxc_setup_rootfs_prepare_root@Base 3.0.2
  lxc_setup_tios@Base 3.0.2
+ lxc_socket_set_timeout@Base 1:3.1.1-0
  lxc_start@Base 3.0.2
  lxc_state2str@Base 3.0.2
  lxc_storage_get_path@Base 3.0.2
@@ -430,7 +474,7 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_terminal_getfd@Base 3.0.2
  lxc_terminal_info_init@Base 3.0.2
  lxc_terminal_init@Base 3.0.2
- lxc_terminal_init_global@Base 3.0.2
+#MISSING: 1:3.1.1-0# lxc_terminal_init_global@Base 3.0.2
  lxc_terminal_io_cb@Base 3.0.2
  lxc_terminal_mainloop_add@Base 3.0.2
  lxc_terminal_map_ids@Base 3.0.2
@@ -441,17 +485,22 @@ liblxc.so.1 liblxc1 #MINVER#
  lxc_terminal_signal_fini@Base 3.0.2
  lxc_terminal_signal_init@Base 3.0.2
  lxc_terminal_signalfd_cb@Base 3.0.2
- lxc_terminal_sigwinch@Base 3.0.2
+#MISSING: 1:3.1.1-0# lxc_terminal_sigwinch@Base 3.0.2
  lxc_terminal_stdin_cb@Base 3.0.2
  lxc_terminal_winsz@Base 3.0.2
  lxc_terminal_write_ringbuffer@Base 3.0.2
  lxc_trim_whitespace_in_place@Base 3.0.2
  lxc_try_cmd@Base 3.0.2
  lxc_unfreeze@Base 3.0.2
+ lxc_unix_connect@Base 1:3.1.1-0
+ lxc_unix_connect_type@Base 1:3.1.1-0
+ lxc_unix_send_fds@Base 1:3.1.1-0
+ lxc_unix_sockaddr@Base 1:3.1.1-0
  lxc_unstack_mountpoint@Base 3.0.2
  lxc_va_arg_list_to_argv@Base 3.0.2
  lxc_va_arg_list_to_argv_const@Base 3.0.2
  lxc_veth_create@Base 3.0.2
+ lxc_veth_mode_to_flag@Base 1:3.1.1-0
  lxc_vlan_create@Base 3.0.2
  lxc_wait@Base 3.0.2
  lxc_wait_for_pid_status@Base 3.0.2
@@ -486,6 +535,8 @@ liblxc.so.1 liblxc1 #MINVER#
  netlink_rcv@Base 3.0.2
  netlink_send@Base 3.0.2
  netlink_transaction@Base 3.0.2
+ netns_freeifaddrs@Base 1:3.1.1-0
+ netns_getifaddrs@Base 1:3.1.1-0
  network_ifname@Base 3.0.2
  network_new_hwaddrs@Base 3.0.2
  new_hwaddr@Base 3.0.2
@@ -518,7 +569,7 @@ liblxc.so.1 liblxc1 #MINVER#
  ovl_update_abs_paths@Base 3.0.2
  parse_byte_size_string@Base 3.0.2
  parse_idmaps@Base 3.0.2
- parse_limit_value@Base 3.0.2
+#MISSING: 1:3.1.1-0# parse_limit_value@Base 3.0.2
  parse_mntopts@Base 3.0.2
  parse_propagationopts@Base 3.0.2
  pin_rootfs@Base 3.0.2
@@ -553,10 +604,14 @@ liblxc.so.1 liblxc1 #MINVER#
  rtnlmsg_alloc@Base 3.0.2
  rtnlmsg_free@Base 3.0.2
  run_command@Base 3.0.2
+ run_command_internal@Base 1:3.1.1-0
+ run_command_status@Base 1:3.1.1-0
  run_lxc_hooks@Base 3.0.2
  run_script@Base 3.0.2
  run_script_argv@Base 3.0.2
  safe_mount@Base 3.0.2
+ seccomp_conf_init@Base 1:3.1.1-0
+ seccomp_notify_handler@Base 1:3.1.1-0
  set_config_path_item@Base 3.0.2
  set_config_string_item@Base 3.0.2
  set_config_string_item_max@Base 3.0.2
@@ -566,7 +621,7 @@ liblxc.so.1 liblxc1 #MINVER#
  setup_proc_filesystem@Base 3.0.2
  setup_resource_limits@Base 3.0.2
  setup_sysctl_parameters@Base 3.0.2
- sha1sum_file@Base 3.0.2
+#MISSING: 1:3.1.1-0# sha1sum_file@Base 3.0.2
  should_default_to_snapshot@Base 3.0.2
  sig_parse@Base 3.0.2
  sort_cgroup_settings@Base 3.0.2
@@ -588,7 +643,7 @@ liblxc.so.1 liblxc1 #MINVER#
  test_writeable_v2@Base 3.0.2
  tmp_proc_unmount@Base 3.0.2
  unpriv_snap_allowed@Base 3.0.2
- update_hwaddr@Base 3.0.2
+#MISSING: 1:3.1.1-0# update_hwaddr@Base 3.0.2
  userns_exec_1@Base 3.0.2
  userns_exec_full@Base 3.0.2
  wait_for_pid@Base 3.0.2
